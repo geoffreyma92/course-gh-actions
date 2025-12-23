@@ -2,8 +2,9 @@ name: api-build
 
 on:
   push:
-    - ".github/workflows/api-build.yml"
-    - "api/**"
+    paths:
+      - ".github/workflows/api-build.yml"
+      - "api/**"
   workflow_dispatch:
 
 jobs:
